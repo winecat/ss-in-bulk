@@ -1,0 +1,1 @@
+{"current":3,"profiles":[{"password":"PASSWORD","method":"aes-256-cfb","server_port":"6789","remarks":"\u8054\u901a\u4f18\u5148","server":"123.123.123.123"},{"password":"PASSWORD","method":"chacha20","server_port":"9999","remarks":"\u6d1b\u6749\u77f6-chacha20","server":"usa.domain.com"}]}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PBS</key>
+	<string>Copv9p5PRHLeK66opkTUkg/nOAlBLd9A3+659k/x3nUmz2O1HoVxtuxOjhRzVzNG</string>
+	<key>ShadowsocksIsRunning</key>
+	<true/>
+	<key>ShadowsocksMode</key>
+	<string>auto</string>
+	<key>config</key>
+	<data>
+	eyJjdXJyZW50IjozLCJwcm9maWxlcyI6W3sicGFzc3dvcmQiOiJQQVNTV09SRCIsIm1ldGhvZCI6ImFlcy0yNTYtY2ZiIiwic2VydmVyX3BvcnQiOiI2Nzg5IiwicmVtYXJrcyI6Ilx1ODA1NFx1OTAxYVx1NGYxOFx1NTE0OCIsInNlcnZlciI6IjEyMy4xMjMuMTIzLjEyMyJ9LHsicGFzc3dvcmQiOiJQQVNTV09SRCIsIm1ldGhvZCI6ImNoYWNoYTIwIiwic2VydmVyX3BvcnQiOiI5OTk5IiwicmVtYXJrcyI6Ilx1NmQxYlx1Njc0OVx1NzdmNi1jaGFjaGEyMCIsInNlcnZlciI6InVzYS5kb21haW4uY29tIn1dfQ==
+	</data>
+	<key>proxy encryption</key>
+	<string>METHOD</string>
+	<key>proxy ip</key>
+	<string>AAA.BBB.CCC.DDD</string>
+	<key>proxy password</key>
+	<string>PASSWORD</string>
+	<key>proxy port</key>
+	<string>PORT</string>
+	<key>public server</key>
+	<false/>
+</dict>
+</plist>
