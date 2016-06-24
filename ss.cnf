@@ -1,4 +1,4 @@
-# !!! Make Sure that the is Line Break Style is LF(UNIX)
+# !!! Make Sure that the Line Break Style is LF(UNIX)
 # eg: IP|Domain Port Method Password Remarks
 
 123.123.123.123 6789 aes-256-cfb PASSWORD 联通优先
