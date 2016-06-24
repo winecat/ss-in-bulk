@@ -41,12 +41,13 @@ foreach ($servers as $k => $v) {
 $server_cnt = count($profiles) ;
 
 $new_arr = array(
-	'current'  => 3 ,
+	'current'  => 0 ,
 	'profiles' => $profiles
 	) ;
 
 # 3. 将数组转化为 JSON 后使用 Base64 编码
-$ss_conf = base64_encode(json_encode($new_arr)) ;
+// !!! 注意这里一定加上 JSON_UNESCAPED_UNICODE 参数(PHP Version > 5.4)来规避自动 UNICODE 转码问题导致的密码格式与配置文件不符合的问题
+$ss_conf = base64_encode(json_encode($new_arr, JSON_UNESCAPED_UNICODE)) ;
 
 # 4.1 将生成的 Base64 字符串保存到文件 (手动)
 // date_default_timezone_set( 'Asia/Shanghai' ) ;
