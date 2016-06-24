@@ -5,7 +5,7 @@ Mac OS X（现 macOS）下批量导入 ShadowsocksX 节点配置工具。
 #### 1. 在 ss.cnf 中填写好节点配置信息，格式如下：
 
 ```
-# !!! Make Sure that the is Line Break Style is LF(UNIX)
+# !!! Make Sure that the Line Break Style is LF(UNIX)
 # eg: IP|Domain Port Method Password Remarks
 
 123.123.123.123 6789 aes-256-cfb PASSWORD 联通优先
