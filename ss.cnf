@@ -1,20 +1,8 @@
 # !!! Make Sure that the Line Break Style is LF(UNIX)
 # eg: IP|Domain Port Method Password Remarks
 
-103.207.70.20 9394 aes-256-cfb ·/ucsb709394 联通优先
-191.101.230.252 9394 aes-256-cfb ·/ucsb709394 普通速度
-23.105.206.238 9394 aes-256-cfb ·/ucsb709394 电信优先
+123.123.123.123 6789 aes-256-cfb PASSWORD 联通优先
 
-# ssvcup: https://ssvcup.com/user/node.php
-usa.getss.tk 19575 chacha20 m1f3tluy0y ssvcup-洛杉矶-chacha20
-usa-aes.getss.tk 19575 aes-256-cfb m1f3tluy0y ssvcup-洛杉矶-aes256cfb
-uk.getss.tk 19575 chacha20 m1f3tluy0y ssvcup-英国-chacha20
-it.getss.tk 19575 chacha20 m1f3tluy0y ssvcup-意大利-chacha20
-ca.getss.tk 19575 chacha20 m1f3tluy0y ssvcup-加拿大-chacha20
-fr.getss.tk 19575 chacha20 m1f3tluy0y ssvcup-法国-chacha20
-de.getss.tk 19575 chacha20 m1f3tluy0y ssvcup-德国-chacha20
-hk.getss.tk 19575 chacha20 m1f3tluy0y ssvcup-香港-chacha20
-jp.getss.tk 19575 chacha20 m1f3tluy0y ssvcup-日本-chacha20
-sg.getss.tk 19575 chacha20 m1f3tluy0y ssvcup-新加坡-chacha20
+usa.domain.tk 9999 chacha20 PASSWORD 洛杉矶-chacha20
 
 # More Servers ...
