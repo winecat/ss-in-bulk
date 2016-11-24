@@ -48,7 +48,8 @@ update_gfwlist()
 	cd ~/.ShadowsocksX || exit 1
 
 	if [ -f "gfwlist.js" ]; then
-		mv gfwlist.js ~/.Trash
+		rm -rf gfwlist.js
+#		mv gfwlist.js ~/.Trash
 	fi
 
 	if [ ! -f $USER_RULE_NAME ]; then
