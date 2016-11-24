@@ -1,0 +1,8 @@
+# !!! Make Sure that the Line Break Style is LF(UNIX)
+# eg: IP|Domain Port Method Password Remarks
+
+123.123.123.123 6789 aes-256-cfb PASSWORD 联通优先
+
+usa.domain.tk 9999 chacha20 PASSWORD 洛杉矶-chacha20
+
+# More Servers ...

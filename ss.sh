@@ -3,6 +3,12 @@
 # cp ~/Library/Preferences/clowwindy.ShadowsocksX.plist ~/
 # plutil -convert xml1 clowwindy.ShadowsocksX.plist -o ss.xml
 
+# 切换路径
+cd /Users/srefan/ss/ss-in-bulk/
+
+# 0. 从MianVPN获取免费的SS账号 写入到配置文件
+python getFreeSs.py > ss.cnf 
+
 # 1. 读取配置文件 servers.conf 生成新的 Base64 配置字符串并替换掉 ss.xml 中的 <data> 标签
 php -f ss.php
 
@@ -13,3 +19,7 @@ plutil -convert binary1 ss.xml -o clowwindy.ShadowsocksX.plist
 defaults import clowwindy.ShadowsocksX clowwindy.ShadowsocksX.plist
 
 # 4. 然后重新打开 ShadowsockX ( End )
+killall ShadowsocksX 1>/dev/null 2>/dev/null || open /Applications/ShadowsocksX.app/
+
+# 返回路径
+cd - >/dev/null

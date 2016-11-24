@@ -1,8 +1,4 @@
-# !!! Make Sure that the Line Break Style is LF(UNIX)
-# eg: IP|Domain Port Method Password Remarks
+47.89.9.201 10001 rc4-md5 7588 [推荐]香港
+47.88.188.62 10005 rc4-md5 753 [推荐]新加坡
+221.229.173.206 10128 rc4-md5 1002 [备用]美国
 
-123.123.123.123 6789 aes-256-cfb PASSWORD 联通优先
-
-usa.domain.tk 9999 chacha20 PASSWORD 洛杉矶-chacha20
-
-# More Servers ...
