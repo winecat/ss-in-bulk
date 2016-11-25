@@ -4,7 +4,8 @@
 # plutil -convert xml1 clowwindy.ShadowsocksX.plist -o ss.xml
 
 # 切换路径
-cd /Users/srefan/ss/ss-in-bulk/
+filepath=$(cd "$(dirname "$0")"; pwd)
+cd $filepath
 
 # 0. 从MianVPN获取免费的SS账号 写入到配置文件
 python getFreeSs.py > ss.cnf 

@@ -10,16 +10,16 @@
 	<string>auto</string>
 	<key>config</key>
 	<data>
-	eyJjdXJyZW50IjowLCJwcm9maWxlcyI6W3sicGFzc3dvcmQiOiI3NTg4IiwibWV0aG9kIjoicmM0LW1kNSIsInNlcnZlcl9wb3J0IjoiMTAwMDEiLCJyZW1hcmtzIjoiW+aOqOiNkF3pppnmuK8iLCJzZXJ2ZXIiOiI0Ny44OS45LjIwMSJ9LHsicGFzc3dvcmQiOiI3NTMiLCJtZXRob2QiOiJyYzQtbWQ1Iiwic2VydmVyX3BvcnQiOiIxMDAwNSIsInJlbWFya3MiOiJb5o6o6I2QXeaWsOWKoOWdoSIsInNlcnZlciI6IjQ3Ljg4LjE4OC42MiJ9LHsicGFzc3dvcmQiOiIxMDAyIiwibWV0aG9kIjoicmM0LW1kNSIsInNlcnZlcl9wb3J0IjoiMTAxMjgiLCJyZW1hcmtzIjoiW+Wkh+eUqF3nvo7lm70iLCJzZXJ2ZXIiOiIyMjEuMjI5LjE3My4yMDYifV19
+	eyJjdXJyZW50IjowLCJwcm9maWxlcyI6W3sicGFzc3dvcmQiOiI4OTA2IiwibWV0aG9kIjoicmM0LW1kNSIsInNlcnZlcl9wb3J0IjoiMTAwMDMiLCJyZW1hcmtzIjoiW+aOqOiNkF3pppnmuK8iLCJzZXJ2ZXIiOiI0Ny44OS45LjIwMSJ9LHsicGFzc3dvcmQiOiIyODQiLCJtZXRob2QiOiJyYzQtbWQ1Iiwic2VydmVyX3BvcnQiOiIxMDAwNiIsInJlbWFya3MiOiJb5o6o6I2QXeaWsOWKoOWdoSIsInNlcnZlciI6IjQ3Ljg4LjE4OC42MiJ9LHsicGFzc3dvcmQiOiI0Njk5IiwibWV0aG9kIjoicmM0LW1kNSIsInNlcnZlcl9wb3J0IjoiMTAwNTkiLCJyZW1hcmtzIjoiW+Wkh+eUqF3nvo7lm70iLCJzZXJ2ZXIiOiIyMjEuMjI5LjE3My4yMDYifV19
 	</data>
 	<key>proxy encryption</key>
 	<string>rc4-md5</string>
 	<key>proxy ip</key>
 	<string>47.89.9.201</string>
 	<key>proxy password</key>
-	<string>7588</string>
+	<string>8906</string>
 	<key>proxy port</key>
-	<string>10001</string>
+	<string>10003</string>
 	<key>public server</key>
 	<false/>
 </dict>
