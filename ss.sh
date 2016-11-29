@@ -3,6 +3,8 @@
 # cp ~/Library/Preferences/clowwindy.ShadowsocksX.plist ~/
 # plutil -convert xml1 clowwindy.ShadowsocksX.plist -o ss.xml
 
+date +%T-%Y/%m/%d
+
 # 切换路径
 filepath=$(cd "$(dirname "$0")"; pwd)
 cd $filepath
@@ -26,7 +28,9 @@ plutil -convert binary1 ss.xml -o clowwindy.ShadowsocksX.plist
 defaults import clowwindy.ShadowsocksX clowwindy.ShadowsocksX.plist
 
 # 4. 然后重新打开 ShadowsockX ( End )
-killall ShadowsocksX 1>/dev/null 2>/dev/null || open /Applications/ShadowsocksX.app/
+killall ShadowsocksX 1>/dev/null 2>/dev/null
+sleep 1s
+open /Applications/ShadowsocksX.app/
 
 # 返回路径
 cd - >/dev/null
