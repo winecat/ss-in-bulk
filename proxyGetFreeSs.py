@@ -12,9 +12,8 @@ def getFreeSsInfos():
 	url = "http://api.jiasu.im/api/apiv2.php?op=tourist"	
 
 	data = ''	
-	# proxyIpList = getIpList()
+	proxyIpList = getIpList()
 	# proxyIpList = getKuaiIpList()
-	proxyIpList = []
 
 	for proxyIp in proxyIpList:
 		try:
