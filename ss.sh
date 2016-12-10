@@ -13,6 +13,11 @@ cd $filepath
 # python getFreeSs.py > ss.cnf
 python proxyGetFreeSs.py > ss.cnf
 
+# 0. 判断获取到的SS账号,如果未获取到中止运行
+if [ "`md5 ss.cnf`" == 'MD5 (ss.cnf) = 68b329da9893e34099c7d8ad5cb9c940' ]; then
+    exit 1
+fi
+
 # 0. 计算MD5 如果一致就不做更新 不一致保存新的MD5
 #if [ "`md5 ss.cnf`" == "`cat md5.txt`" ]; then  
 #	exit 1  

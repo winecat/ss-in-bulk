@@ -1,11 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
-import os
 import sys
 import urllib2
-import json
-import socket
 import requests
+from bs4 import BeautifulSoup
 
 def getIpList():
 	url = 'http://api.xicidaili.com/free2016.txt'
@@ -13,8 +11,22 @@ def getIpList():
 	data = data.text
 	ip_list = data.split('\r\n')
 	return ip_list
+	
+def getKuaiIpList():
+	resultArray = []
+	url = 'http://www.kuaidaili.com/free/outha'
+	response = urllib2.urlopen(url).read()
 
-#if __name__=='__main__':
-#	reload(sys)
-#	sys.setdefaultencoding("utf-8")
-#	print(getIpList())
+	soup = BeautifulSoup(response, "html.parser")
+	tbody = soup.find('tbody')
+	for tag in tbody.find_all('tr'):
+		ip = tag.find(attrs={"data-title": "IP"}).text
+		port = tag.find(attrs={"data-title": "PORT"}).text
+		resultArray.append(ip + ':' + port)
+	return resultArray
+
+ 
+if __name__=='__main__':
+	reload(sys)
+	sys.setdefaultencoding("utf-8")
+	print getKuaiIpList()
