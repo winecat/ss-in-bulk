@@ -7,11 +7,26 @@ import json
 
 from getFreeProxyList import *
 
+def convertFormat(json):
+	hjson = json['msg']['ss']
+	data = ''
+	for i in xrange(0, len(hjson)):
+		data += hjson[i]['serverip']
+		data += ' ' 
+		data += hjson[i]['port']
+		data += ' '
+		data += hjson[i]['authscheme']
+		data += ' '
+		data += hjson[i]['passwd']
+		data += ' '
+		data += hjson[i]['servername']
+		data += '\n'
+	return data
+
 def getFreeSsInfos():
 #	url = "https://api.mianvpn.com/ajax.php?verify=true&mod=getfreess"
 	url = "http://api.jiasu.im/api/apiv2.php?op=tourist"	
 
-	data = ''	
 	proxyIpList = getIpList()
 	# proxyIpList = getKuaiIpList()
 
@@ -28,22 +43,25 @@ def getFreeSsInfos():
 			
 			response = urllib2.urlopen(url, timeout=3)
 			result = json.loads(response.read())
-			hjson = result['msg']['ss']
-			for i in xrange(0, len(hjson)):
-				data += hjson[i]['serverip']
-				data += ' ' 
-				data += hjson[i]['port']
-				data += ' '
-				data += hjson[i]['authscheme']
-				data += ' '
-				data += hjson[i]['passwd']
-				data += ' '
-				data += hjson[i]['servername']
-				data += '\n'
+			return convertFormat(result)
 			break
 		except:
 			pass
-	return data
+	try:
+		proxy_handler = urllib2.ProxyHandler({})
+		opener = urllib2.build_opener(proxy_handler)
+		urllib2.install_opener(opener)
+
+		# response = urllib2.urlopen('http://httpbin.org/ip', timeout=5)
+		# print('origin ip : ' + json.loads(response.read())['origin'])
+
+		response = urllib2.urlopen(url, timeout=5)
+		result = json.loads(response.read())
+		return convertFormat(result)
+	except:
+		pass
+
+	return ''
 
 if __name__=='__main__':
 	reload(sys)
