@@ -25,7 +25,12 @@ fi
 #md5 ss.cnf > md5.txt
 
 # 1. 读取配置文件 servers.conf 生成新的 Base64 配置字符串并替换掉 ss.xml 中的 <data> 标签
-php -f ss.php
+php -f ss.php > result.php
+
+# 1. 判断配置文件转换是否出错
+if [ -s result.php ]; then
+	exit 1
+fi
 
 # 2. 将新的 ss.xml 转换为 plist
 plutil -convert binary1 ss.xml -o clowwindy.ShadowsocksX.plist
