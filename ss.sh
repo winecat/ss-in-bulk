@@ -10,7 +10,8 @@ filepath=$(cd "$(dirname "$0")"; pwd)
 cd $filepath
 
 # 0. 从MianVPN获取免费的SS账号 写入到配置文件
-python getFreeSs.py > ss.cnf
+# python getFreeSs.py > ss.cnf
+python proxyGetFreeSs.py > ss.cnf
 
 # 0. 计算MD5 如果一致就不做更新 不一致保存新的MD5
 #if [ "`md5 ss.cnf`" == "`cat md5.txt`" ]; then  
