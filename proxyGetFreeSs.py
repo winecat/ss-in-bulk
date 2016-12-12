@@ -27,7 +27,7 @@ def getFreeSsInfos():
 #	url = "https://api.mianvpn.com/ajax.php?verify=true&mod=getfreess"
 	url = "http://api.jiasu.im/api/apiv2.php?op=tourist"	
 
-	proxyIpList = getIpList()
+	proxyIpList = getXiciIpList()
 	# proxyIpList = getKuaiIpList()
 
 	for proxyIp in proxyIpList:
@@ -36,9 +36,9 @@ def getFreeSsInfos():
 			opener = urllib2.build_opener(proxy_handler)
 			urllib2.install_opener(opener)
 
-			# print('gotten ip : ' + proxyIp)
+			# print('proxy ip : ' + proxyIp)
 			# response = urllib2.urlopen('http://httpbin.org/ip', timeout=3)
-			# print('origin ip : ' + json.loads(response.read())['origin'])
+			# print('original ip : ' + json.loads(response.read())['origin'])
 			# continue
 			
 			response = urllib2.urlopen(url, timeout=3)
@@ -53,7 +53,8 @@ def getFreeSsInfos():
 		urllib2.install_opener(opener)
 
 		# response = urllib2.urlopen('http://httpbin.org/ip', timeout=5)
-		# print('origin ip : ' + json.loads(response.read())['origin'])
+		# print('original ip : ' + json.loads(response.read())['origin'])
+		# return ''
 
 		response = urllib2.urlopen(url, timeout=5)
 		result = json.loads(response.read())

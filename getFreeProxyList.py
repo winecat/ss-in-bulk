@@ -4,7 +4,7 @@ import sys
 import urllib2
 from bs4 import BeautifulSoup
 
-def getIpList():
+def getXiciIpList():
 	url = 'http://api.xicidaili.com/free2016.txt'
 	try:
 		data = urllib2.urlopen(url, timeout=15).read()
@@ -34,4 +34,4 @@ def getKuaiIpList():
 if __name__=='__main__':
 	reload(sys)
 	sys.setdefaultencoding("utf-8")
-	print getIpList()
+	print getXiciIpList()
