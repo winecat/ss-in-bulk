@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#coding:utf-8
 
 import os
 import sys
@@ -19,6 +20,8 @@ def convertFormat(json):
 		data += ' '
 		data += hjson[i]['passwd']
 		data += ' '
+		if hjson[i]['status'] == '6':
+			data += '[不可用]'
 		data += hjson[i]['servername']
 		data += '\n'
 	return data
@@ -29,6 +32,7 @@ def getFreeSsInfos():
 
 	proxyIpList = getXiciIpList()
 	# proxyIpList = getKuaiIpList()
+	# proxyIpList = []
 
 	for proxyIp in proxyIpList:
 		try:

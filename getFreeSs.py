@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+#coding:utf-8
 
 import sys
 import urllib2
@@ -23,6 +24,8 @@ def getFreeSsInfos():
             data += ' '
             data += hjson[i]['passwd']
             data += ' '
+            if hjson[i]['status'] == '6':
+                data += '[不可用]'
             data += hjson[i]['servername']
             data += '\n'
         return data
